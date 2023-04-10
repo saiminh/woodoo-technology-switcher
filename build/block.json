@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/woodoo-technology-switcher",
+  "version": "0.1.0",
+  "title": "Woodoo Technology Switcher",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "attributes": {
+    "technologies": {
+      "type": "array",
+      "default": [
+        {
+          "name": "Slim",
+          "link": "slim",
+          "description": "Wood that’s translucent and touch sensitive.\n/\nFor Smart Surfaces"
+        },
+        {
+          "name": "Flow",
+          "link": "flow",
+          "description": "Wood that’s soft and flexible.\n/\n For fine leatherwork"
+        },
+        {
+          "name": "Solid",
+          "link": "solid",
+          "description": "Wood that’s as strong as concrete and steel\n/\n For high, fast, dense building"
+        }
+      ]
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "woodoo-technology-switcher",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
