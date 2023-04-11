@@ -8,6 +8,10 @@
   --bg-color: var(--wp--preset--color--contrast, #000);
   --text-color: var(--wp--preset--color--base, #fff);
 }
+.has-offwhite-background-color .woodoo-tech-switcher {
+  --bg-color: var(--wp--preset--color--offwhite, #fff);
+  --text-color: var(--wp--preset--color--contrast, #000);
+}
 .woodoo-tech-switcher-button {
   padding: 1rem 2rem;
   display: block;
@@ -65,4 +69,11 @@
     margin-left: 1em;
     font-size: .6em;
   }
+}
+body.page-slim .woodoo-tech-switcher-button[href*="slim"],
+body.page-flow .woodoo-tech-switcher-button[href*="flow"],
+body.page-solid .woodoo-tech-switcher-button[href*="solid"] {
+  text-decoration: none;
+  color: var(--bg-color)!important;
+  background-color: var(--text-color);
 }
