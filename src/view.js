@@ -1,3 +1,5 @@
+//This interactivity is not used anymore, but it is kept here for reference
+
 const initTechnologySwitcher = () => {
   const switcher = document.querySelector('.woodoo-tech-switcher');
   let switcherOffset = switcher.offsetTop;
